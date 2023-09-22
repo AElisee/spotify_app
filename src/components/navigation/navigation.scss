@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  a {
+    width: 40px;
+    height: 40px;
+    border-radius: 360px;
+    background-color: rgba(39, 38, 38, 0.739);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #4e4c4c3f;
+      transition: all 200ms ease-in;
+    }
+  }
+}

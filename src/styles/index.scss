@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+$bg-black: rgba(0, 0, 0, 0.886);
+$color-0: #06141b;
+
+body {
+  background-color: $bg-black;
+  font-family: "Ubuntu", sans-serif;
+  color: aliceblue;
+  font-size: 10px;
+}
+
+.h-component {
+  margin: 10px 0;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+  }
+
+  .c-title {
+    font-size: 1.4rem;
+  }
+}
+
+.card-ctn {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  -ms-overflow-style: none; // IE 10+
+  overflow: -moz-scrollbars-none; // Firefox
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.p-header {
+  display: flex;
+  align-items: center;
+}
+
+.p-title {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.page {
+  .card-ctn {
+    flex-wrap: wrap;
+  }
+}
