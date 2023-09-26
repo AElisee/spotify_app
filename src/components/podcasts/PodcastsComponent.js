@@ -5,8 +5,9 @@ import "./podcastsComponent.scss";
 
 const PodcastsComponent = () => {
   const podcasts = useSelector(
-    (state) => state?.movies?.moviesData?.podcasts?.items
+    (state) => state.movies.moviesData.podcasts.items
   );
+
   return (
     <div className="c-podcasts  h-component">
       <div className="top">

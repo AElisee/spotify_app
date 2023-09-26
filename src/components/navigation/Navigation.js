@@ -8,7 +8,7 @@ const Navigation = ({ left, right }) => {
       <NavLink to={left}>
         <img src="./images/chevron-left.svg" alt="chevron-left" />
       </NavLink>
-      <NavLink to={right}>
+      <NavLink className="right-btn" to={right}>
         <img src="./images/chevron-right.svg" alt="chevron-right" />
       </NavLink>
     </div>

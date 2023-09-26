@@ -2,11 +2,12 @@ import { useSelector } from "react-redux";
 import Card from "../card/Card";
 import SeeAll from "../seeAll/SeeAll";
 import "./episodesComponent.scss";
+import { getAllMovies } from "../../redux/movies.slice";
 
 const EpisodesComponent = () => {
-  const episodes = useSelector(
-    (state) => state.movies.moviesData.episodes.items
-  );
+  const MoviesData = useSelector(getAllMovies);
+  const episodes = MoviesData.episodes?.items;
+
   return (
     <div className="c-episodes h-component">
       <div className="top">

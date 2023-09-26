@@ -16,4 +16,12 @@
       transition: all 200ms ease-in;
     }
   }
+
+  .right-btn {
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: none;
+    }
+  }
 }

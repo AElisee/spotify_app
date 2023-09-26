@@ -5,6 +5,7 @@ import "./genresComponent.scss";
 
 const GenresComponent = () => {
   const genres = useSelector((state) => state.movies.moviesData.genres.items);
+
   return (
     <div className="c-genres  h-component">
       <div className="top">
